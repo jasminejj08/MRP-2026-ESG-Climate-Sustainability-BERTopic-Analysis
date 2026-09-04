@@ -1,0 +1,35 @@
+Refer to the Experiments Section and follow along to run the code. Make sure the directory structure is as given in the Appendix and that all path files are correct when running.
+
+**Experiment: 4.1 Text Extraction**  
+1. In Extracted\_Text / ExtractParagraphsScripts directory extract\_pargraphs\_parallel.py (calls extract\_paragraphs\_PARQUETver.py); creates and saves exploded\_paragraphs.parquet in Sampled\_Files / Extracted\_Paragraphs\_Final dir.
+2. Run check\_extracted\_paragraphs.py in Sampled\_Files / Extracted\_Paragraphs\_Final directory to check the extracted paragraphs.
+3. Run clean\_extracted\_text.py in Sampled\_Files / Extracted\_Paragraphs\_-\\Final directory. This drops non-english paragraphs and also creates and saves english\_only\_df.parquet
+
+
+
+**Experiment: 4.2 ClimateBERT Text Classification**
+1. In MRP / ClimateBERT\_TextCLF, climate\_bert\_textclf.py runs the classification (on english\_only\_df.parquet) using ClimateBERT, and saves classifed\_paragraphs.parquet which contains all paragraphs that have been classified as climate-related (classification label = yes)
+2. In the same directory, run check\_and\_clean\_classified.py to drop paragraphs with a low (confidence) score and generate cleaned\_classified\_paragraphs.parquet
+
+
+
+**Experiment: 4.3 ClimateBERT Sentiment Analysis**
+1. In MRP / ClimateBERT\_SentimentAN, climatebert\_sentiment\_finalver.py will apply sentiment analysis to cleaned\_classified\_paragraphs.parquet
+2. In the same directory, sentiment\_an\_stats.py is used to check the classification results and also generate the graphs for more information
+
+
+
+**Experiment: 4.4.1 BERTopic Topics Across Full Corpus**
+1. In MRP / BERTopic\_AN, run bertopic\_all\_ver2.py to run BERTopic on the entire corpus. Parameter tuning can be done in this file. This script will also produce figures and save the model and embeddings in separate folders to be re-used.
+
+
+
+**Experiment: 4.4.2 BERTopic Topics Across Individual Sentiment Groups**
+1. In MRP / BERTopic\_AN, run bertopc\_groups.py which runs BERTopic on paragraphs grouped by their sentiment label. The process is similar to the full corpus run and parameters can be adjusted here as well. This will also produce figures and save them to a separate folder
+
+
+
+**Experiment: 4.5 Sentiment Trends and Metric Comparison**
+1. In MRP / BERTopic\_AN, run analyze\_sentiment\_trends.py to generate a table and the associated figure to visualize the sentiment trends over time
+2. In MRP / Metric\_Comparison, run metric\_comparison.py to generate a figure that displays the trends of both the opportunity sentiment and self-disclosed metrics for a particular ESG indicator described by Forster et al. (2026) in their paper and dashboard
+
