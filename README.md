@@ -3,7 +3,7 @@ This repository is for my 2026 MRP at TMU, applying BERTopic to ESG disclosures 
 
 ---
 
-### Abstract
+## Abstract
 ESG disclosures and reporting have become an indispensable part of decision-making, both for investors and corporations as we pay more attention to sustainability and environmental contributions. This paper aims to complement current research by taking a closer look at the linguistic patterns and themes pertaining to the E (environmental) pillar, specifically the climate domain, to analyze the language temporally. Such opportunity-framed climate-related language, which we coin as “green language”, is studied to track drift over time by analyzing how companies talk about what they report. By applying ClimateBERT and BERTopic to select sustainability reports from European firms over a 10 year period, we observe how topics, themes, and sentiments have changed over time and use these changes to highlight a viable method to measure potential greenwashing all by using internal, firm-disclosed data.
 
 Key Words: ESG, environment, climate, sustainability, climateBERT, BERTopic, dynamic topic modeling, linguistic analysis 
@@ -80,6 +80,13 @@ MRP (root directory)
 │      └── metric_comparison.py
 │      └── esg_indicators_postprocessed.csv 
 ```
+
+--- 
+
+### Running Files
+To view the order of running files, please follow ```running_files.py``` available in the root directory.  
+**Note**: The absolute paths to input/output files must be adjusted according to your file paths and follow the directory structure above.  
+**Note**: Make sure the necessary libraries are installed in your environment before running.
 
 ---
 
