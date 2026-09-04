@@ -84,7 +84,7 @@ MRP (root directory)
 --- 
 
 ### Running Files
-To view the order of running files, please follow ```running_files.py``` available in the root directory.  
+To view the order of running files, please follow ```running_files.txt``` available in the root directory.  
 **Note**: The absolute paths to input/output files must be adjusted according to your file paths and follow the directory structure above.  
 **Note**: Make sure the necessary libraries are installed in your environment before running.
 
