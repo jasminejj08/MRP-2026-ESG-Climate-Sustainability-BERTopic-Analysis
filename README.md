@@ -1,5 +1,5 @@
 # MRP-2026-ESG-BERTopic-Analysis
-This repository is for my 2026 MRP at TMU, applying BERTopic to ESG disclosures through a designed pipeline to determine temporal themes and possible greenwashing.
+This repository is for a major research project/paper; applying BERTopic to ESG disclosures through a designed pipeline to determine temporal themes and possible greenwashing.
 
 ---
 
